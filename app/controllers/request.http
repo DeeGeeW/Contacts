@@ -1,0 +1,59 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDkzNzM2MDZ9.tV2ofYRX2h8PFtYPavQ3ZvmUJEYqkwvWdKp4D1EU9V4
+
+### contacts index
+GET http://localhost:3000/index
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDkzNzM0NzB9.QScadD8Jz7UAhaxnO81YIlZyJjkcNV2FUg8oiqwPPkE
+
+### contacts show
+GET http://localhost:3000/show/1
+
+### contacts create
+POST http://localhost:3000/contacts
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDgwNTc4MzZ9.MDVXkgbUFsMADiilzMW0YnlExbcQrRp8qx9xsvEfygU
+Content-Type: application/json
+
+{
+"first_name": "Gigga",
+"last_name": "Jay",
+"email": "BRLOC@gmail.com",
+"phone_number": "888-923-3333"
+}
+
+### contact Update
+PATCH http://localhost:3000/contacts/8
+Content-Type: application/json
+
+{
+"first_name": "Gigga",
+"last_name": "Jay",
+"email": "BRLOC@gmail.com",
+"phone_number": "888-923-3333"
+}
+
+
+### contact Destroy
+DELETE http://localhost:3000/contacts/6
+
+
+### Session create (login)
+POST http://localhost:3000/sessions
+Content-Type: application/json
+
+{
+  "email": "test3@test.com",
+  "password": "password"
+}
+
+
+### Users create (signup)
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Test name3",
+  "email": "test3@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+
+}
+
