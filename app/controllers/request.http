@@ -1,15 +1,15 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDkzNzM2MDZ9.tV2ofYRX2h8PFtYPavQ3ZvmUJEYqkwvWdKp4D1EU9V4
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTY0NjY0NzV9.s_maeDbhg4XL7_6p_9nu37E0k3DZJ__2vCnfb5qk7Cw
 
 ### contacts index
 GET http://localhost:3000/index
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDkzNzM0NzB9.QScadD8Jz7UAhaxnO81YIlZyJjkcNV2FUg8oiqwPPkE
+Authorization: Bearer {{jwt}}
 
 ### contacts show
 GET http://localhost:3000/show/1
 
 ### contacts create
 POST http://localhost:3000/contacts
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDgwNTc4MzZ9.MDVXkgbUFsMADiilzMW0YnlExbcQrRp8qx9xsvEfygU
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
